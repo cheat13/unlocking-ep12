@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button>
+        <img src="../../assets/imgs/Logobanmor@3x.png" style="width: 40px"/>
+      </button>
+    </ion-buttons>
+    <ion-title>มิกซ์ เบเกอรี่</ion-title>
+    <ion-buttons right>
+      <button ion-button (click)="History()">
+        <img src="../../assets/imgs/hamburgarmanu@3x.png" style="width: 30px"/>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<ion-grid style="padding-bottom: 50px">
+  <ion-row class="item-row">
+    <ion-col class="item">
+      <div class="item-header">Chocolate cake</div>
+      <div class="item-checkbox"><ion-checkbox checked></ion-checkbox></div>
+      <img src="../../assets/imgs/chocolate cake.png" />
+      <div class="item-footer">฿ 50</div>
+    </ion-col>
+    <ion-col class="item">
+      <div class="item-header">Panna cotta</div>
+      <div class="item-checkbox"><ion-checkbox checked></ion-checkbox></div>
+      <img src="../../assets/imgs/panna cotta.png" />
+      <div class="item-footer">฿ 50</div>
+    </ion-col>
+  </ion-row>
+  <ion-row class="item-row">
+    <ion-col class="item">
+      <div class="item-header">Cheesecake</div>
+      <div class="item-checkbox"><ion-checkbox></ion-checkbox></div>
+      <img src="../../assets/imgs/cheesecake.png" />
+      <div class="item-footer">฿ 50</div>
+    </ion-col>
+    <ion-col class="item">
+      <div class="item-header">Crepe cake</div>
+      <div class="item-checkbox"><ion-checkbox></ion-checkbox></div>
+      <img src="../../assets/imgs/crepe cake.png" />
+      <div class="item-footer">฿ 50</div>
+    </ion-col>
+  </ion-row>
+  <ion-row class="item-row">
+    <ion-col class="item">
+      <div class="item-header">Hot coffee</div>
+      <div class="item-checkbox"><ion-checkbox></ion-checkbox></div>
+      <img src="../../assets/imgs/hot coffee.png" />
+      <div class="item-footer">฿ 50</div>
+    </ion-col>
+    <ion-col class="item">
+      <div class="item-header">Ice coffee</div>
+      <div class="item-checkbox"><ion-checkbox></ion-checkbox></div>
+      <img src="../../assets/imgs/ice coffee.png" />
+      <div class="item-footer">฿ 50</div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-grid class="page-footer">
+  <ion-row>
+    <ion-col class="page-footer-count">2 รายการ</ion-col>
+    <ion-col class="page-footer-cost">฿ 100</ion-col>
+    <ion-col no-padding>
+      <button ion-button class="right page-footer-button" (click)="Payment()">สั่งซื้อ</button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
